@@ -1,0 +1,118 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    font-family: 'M PLUS Code Latin', sans-serif
+    height: 100vh
+
+.container
+    position: relative
+    overflow: hidden
+    width: 100vw
+    height: 100vh
+
+h1 
+    font-size: 40px
+    line-height: 60px
+    text-align: center
+
+.sidebar
+    position: absolute
+    width: 35%
+    height: 100%
+    top: 0
+    left: 0
+    transition: transform 0.5s ease-in-out
+    &_color 
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        color: #fff
+        &_1
+            background: linear-gradient(220.16deg, #FF3500 -8%, #82C367 138%)
+        &_2
+            background: linear-gradient(220.16deg, #84B1C7 1%, #F1F09C 138%)
+        &_3
+            background: linear-gradient(220.16deg, #7D8888 -35%, #57462F 138%)
+        &_4
+            background: linear-gradient(220.16deg, #548420 -8%, #2149A4 138%)
+        &_5
+            background: linear-gradient(221.87deg, #0C111C 25%, #F70000 128%)
+        &_6
+            background: linear-gradient(229.99deg, #e3e7a2 -26%, #380375 145%)
+        &_7
+            background: linear-gradient(215.32deg, #0e1d16 7%, #FF3500 124%)
+    &_twitter
+        width: 15%
+        margin: 0 auto
+        
+
+
+.main-slide
+    position: absolute
+    width: 65%
+    height: 100%
+    top: 0
+    left: 35% // 
+    transition: transform 0.5s ease-in-out
+    &_1
+        background: url('../img/hannibal.jpg') center center/cover no-repeat
+        width: 100%
+        height: 100%
+    &_2
+        background: url('../img/sherlock.jpg') center center/cover no-repeat
+        width: 100%
+        height: 100%   
+    &_3
+        background: url('../img/avatar.jpg') center center/cover no-repeat
+        width: 100%
+        height: 100%
+    &_4
+        background: url('../img/supern.jpg') center center/cover no-repeat
+        width: 100%
+        height: 100%
+    &_5
+        background: url('../img/house.jpg') center center/cover no-repeat
+        width: 100%
+        height: 100%
+    &_6
+        background: url('../img/doctorWho.jpg') center center/cover no-repeat
+        width: 100%
+        height: 100%
+    &_7
+        background: url('../img/south-park.jpg') center center/cover no-repeat
+        width: 100%
+        height: 100%
+
+button
+    background-color: #fff
+    border: none
+    color: #aaa
+    cursor: pointer
+    font-size: 16px
+    padding: 10px
+    &:hover
+        background-color: rgb(189, 169, 169)
+        color: #111
+    &:focus
+        outline: none
+
+.container .controls
+    button
+        position: absolute
+        top: 50vh
+        left: 35%
+        z-index: 10
+    .btn_down
+        transform: translateX(-100%)
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
+    .btn_up
+        transform: translateY(-100%)
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
